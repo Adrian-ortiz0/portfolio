@@ -1,5 +1,6 @@
 import { AboutMe } from "./components/AboutMe.jsx";
 import { ContactMe } from "./components/ContactMe.jsx";
+import { Footer } from "./components/Footer.jsx";
 import { Header } from "./components/Header.jsx";
 import { Projects } from "./components/Projects.jsx";
 import { SkillsBridge } from "./components/SkillsBridge.jsx";
@@ -13,6 +14,7 @@ export const Portfolio = () => {
       <SkillsSection />
       <Projects />
       <ContactMe />
+      <Footer />
     </>
   );
 };

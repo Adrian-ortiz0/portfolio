@@ -3,6 +3,7 @@ import "../style.css";
 
 export const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -24,11 +25,18 @@ export const Header = () => {
     });
   }, []);
 
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <>
       <header className="header">
         <nav className={`nav ${isScrolled ? "scrolled" : ""}`}>
-          <ul className="nav__list">
+          <div className="menu-icon" onClick={toggleMenu}>
+            &#9776;
+          </div>
+          <ul className={`nav__list ${isMenuOpen ? "active" : ""}`}>
             <li>
               <a href="#home">Home</a>
             </li>

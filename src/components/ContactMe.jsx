@@ -25,6 +25,9 @@ export const ContactMe = () => {
           </div>
         </form>
       </div>
+      <div className="contactme__logo-container">
+        <img src="public/mi_logo.svg" alt="" />
+      </div>
     </section>
   );
 };

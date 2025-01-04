@@ -4,6 +4,8 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+/* Header Section */
+
 .header {
   display: flex;
   flex-direction: column;
@@ -39,6 +41,13 @@ body {
 
 .nav.scrolled {
   background: rgb(0, 0, 0);
+}
+
+.menu-icon {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #e5c9d7;
 }
 
 .nav__list {
@@ -159,6 +168,32 @@ body {
     font-size: 16px;
   }
 }
+
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+  .nav {
+    background-color: black;
+  }
+
+  .nav__list {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav__list.active {
+    display: flex;
+  }
+
+  .nav__list li {
+    margin: 10px 0;
+  }
+}
+
+/* About me Section */
 
 .aboutme__section {
   display: flex;
@@ -307,6 +342,8 @@ strong {
   }
 }
 
+/* Skills Section */
+
 .skills__section {
   display: flex;
   flex-direction: row;
@@ -451,6 +488,8 @@ strong {
   margin-top: 10px;
   font-size: 1.2rem;
 }
+
+/* Projects Section */
 
 .projects {
   display: flex;
@@ -631,6 +670,8 @@ strong {
   color: #e5c9d7;
 }
 
+/* Contact Me Section */
+
 .contactme__section {
   display: flex;
   flex-direction: row;
@@ -647,8 +688,10 @@ strong {
   background-size: cover;
   background-position: center;
   background-blend-mode: overlay;
-  padding: 20px;
+  padding: 30px;
   box-sizing: border-box;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .contactme__form-container {
@@ -755,6 +798,43 @@ strong {
   background-color: #a76596;
   transform: scale(1.05);
 }
+.contactme__logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  height: 100%;
+}
+.contactme__logo-container img {
+  width: 60%;
+  height: 60%;
+  opacity: 0.8;
+  transition: all 0.5s ease;
+  border-radius: 15px;
+}
+
+.contactme__logo-container img:hover {
+  transform: translateY(-10px) scale(1.2);
+  opacity: 1;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
+  filter: hue-rotate(45deg);
+}
+
+@keyframes colorShift {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  50% {
+    filter: hue-rotate(180deg);
+  }
+  100% {
+    filter: hue-rotate(0deg);
+  }
+}
+
+.contactme__logo-container img:hover {
+  animation: colorShift 3s infinite;
+}
 
 @media (max-width: 768px) {
   .contactme__section {
@@ -780,4 +860,22 @@ strong {
     width: 50%;
     height: 50px;
   }
+  .contactme__logo-container img {
+    display: none;
+  }
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  background-color: #0f0f0f;
+  color: #c5b9b9;
+  font-size: 1rem;
+  text-align: center;
+  gap: 10px;
 }

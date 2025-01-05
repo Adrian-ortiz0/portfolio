@@ -42,37 +42,39 @@ export const Projects = () => {
   ];
   const projects2 = [
     {
-      title: "Cinemark System",
+      title: "Hocus Pocus SQL",
       description:
-        "A system that allows users to book tickets and buy combos for movies.",
-      image: "public/project_images/cinemark.jpg",
+        "A SQL schema which show the functionality of a custom store.",
+      image: "public/project_images/custom_store.jpg",
     },
     {
-      title: "Veterinay System Pet Society",
+      title: "SQL Chinook Music Store",
       description:
-        "A system that allows users to book appointments for their pets.",
-      image: "public/project_images/veterinary_system.jpg",
+        "A SQL schema which show the functionality of a music store.",
+      image: "public/project_images/sql_chinook.jpg",
     },
     {
-      title: "Parking System",
-      description: "A system that allows users to book parking spaces.",
-      image: "public/project_images/parking_system.jpg",
-    },
-    {
-      title: "Pokemon Kanto Stadium",
+      title: "Giphy APP",
       description:
-        "A system that allows users to participate in Pokemon battles (Full Console).",
-      image: "public/project_images/kanto_stadium.jpg",
+        "A system that allows users to search for gifs and save them.",
+      image: "public/project_images/giphy_app.jpg",
+    },
+
+    {
+      title: "StarWars API",
+      description:
+        "A system that allows users to search for StarWars characters.",
+      image: "public/project_images/swapi_app.jpg",
     },
     {
-      title: "Mac Miller Store",
-      description: "A system that allows users to buy products online.",
-      image: "public/project_images/macmiller_store.jpg",
+      title: "Cronometro",
+      description: "A system that allows users to use a stopwatch.",
+      image: "public/project_images/cronometro.jpg",
     },
     {
-      title: "Python Library",
-      description: "A system that allows users to manage a library.",
-      image: "public/project_images/library_system.jpg",
+      title: "MisChismes.com",
+      description: "A system that allows users to post and comment on gossips.",
+      image: "public/project_images/mischismes_com.jpg",
     },
   ];
   const projects3 = [
@@ -137,14 +139,6 @@ export const Projects = () => {
                 className={activeTab === 2 ? "active" : ""}
               >
                 Tab 2
-              </a>
-            </li>
-            <li>
-              <a
-                onClick={() => handleTabClick(3)}
-                className={activeTab === 3 ? "active" : ""}
-              >
-                Tab 3
               </a>
             </li>
           </ul>

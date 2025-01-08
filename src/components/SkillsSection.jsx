@@ -116,7 +116,6 @@ export const SkillsSection = () => {
                   />
                 </div>
               </div>
-              <p>{clickedIcon.level}%</p>
             </div>
           </div>
         )}

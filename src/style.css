@@ -76,8 +76,9 @@ body {
   width: 90%;
   height: 90%;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
   text-align: center;
+  gap: 50px;
 }
 
 .header__titles {
@@ -90,7 +91,7 @@ body {
 }
 
 .header__content h1 {
-  font-size: 6rem;
+  font-size: 6.5rem;
   color: #c48cb3;
   font-weight: lighter;
   margin: 0;
@@ -98,7 +99,7 @@ body {
 }
 
 .header__content h2 {
-  font-size: 4rem;
+  font-size: 5rem;
   color: #c5b9b9;
   font-weight: lighter;
   margin: 0;
@@ -109,6 +110,7 @@ body {
   color: #e5c9d7;
   margin: 0;
   animation: fadeIn 2.5s;
+  font-size: 1.2rem;
 }
 
 .header__buttons {
@@ -202,11 +204,11 @@ body {
   justify-content: center;
   background: linear-gradient(
       to bottom,
-      rgba(12, 7, 30, 0.868),
-      rgba(4, 11, 16, 0.434),
-      rgba(12, 5, 12, 0.493)
+      rgb(12, 7, 30),
+      rgba(24, 69, 102, 0.434),
+      rgba(12, 5, 12, 0.897)
     ),
-    url("../public/aboutme_1.jpg");
+    url("../public/aboutme_background2.jpg");
   background-size: cover;
   width: 100%;
   min-height: 100vh;
@@ -294,6 +296,47 @@ strong {
   height: 20px;
 }
 
+.aboutMe_extras{
+  width: 60%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: auto;
+  gap: 10px;
+}
+
+.mvContainer{
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 30vh;
+  gap: 10px;
+  
+}
+.mvContainer div{
+  width: 50%;
+  background-color: #191919;
+  border-radius: 15px;
+  color: #c5b9b9;
+  padding: 10px 30px;
+}
+.mvContainer div p{
+  text-align: justify;
+  font-size: 1.1rem;
+}
+.certifications{
+  width: 100%;
+  height: 20vh;
+}
+.certifications div{
+  width: 100%;
+  height: 100%;
+  background-color: #191919;
+  border-radius: 15px;
+  color: #c5b9b9;
+}
+
 @media (max-width: 900px) {
   .aboutme__content h2 {
     font-size: 2.5rem;
@@ -342,6 +385,7 @@ strong {
   }
 }
 
+
 /* Skills Section */
 
 .skills__section {
@@ -353,9 +397,9 @@ strong {
   width: 100%;
   background: linear-gradient(
       to bottom,
-      rgba(12, 7, 30, 0.541),
+      rgba(0, 0, 0, 0.795),
       rgb(96 181 245 / 73%),
-      rgba(12, 5, 12, 0.879)
+      rgba(0, 0, 0, 0.938)
     ),
     url("../public/header__background.jpg");
   background-size: cover;
@@ -368,8 +412,8 @@ strong {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
-  height: 70%;
+  justify-content: space-evenly;
+  height: 55%;
   margin-right: 7%;
   width: 65%;
 }

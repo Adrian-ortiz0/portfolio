@@ -6,7 +6,7 @@ export const AboutMe = () => {
       <section className="aboutme__section">
         <div className="aboutme__container">
           <div className="aboutme__content">
-            <img src="public/mi_foto.svg" alt="" />
+            <img src="../public/mi_foto.svg" alt="" />
             <div className="aboutme__content">
               <h2>Hi, I'm Adrián Ortiz</h2>
               <h3>
@@ -21,7 +21,7 @@ export const AboutMe = () => {
               <a href="">
                 <button>
                   <img
-                    src="public/header_icons/linkedin_icon.svg"
+                    src="../public/header_icons/linkedin_icon.svg"
                     alt=""
                     width={20}
                     height={20}
@@ -34,7 +34,7 @@ export const AboutMe = () => {
                 <button>
                   {" "}
                   <img
-                    src="public/header_icons/email_icon.svg"
+                    src="../public/header_icons/email_icon.svg"
                     alt=""
                     width={20}
                     height={20}
@@ -47,7 +47,7 @@ export const AboutMe = () => {
                 <button>
                   {" "}
                   <img
-                    src="public/header_icons/github_icon.svg"
+                    src="../public/header_icons/github_icon.svg"
                     alt=""
                     width={20}
                     height={20}

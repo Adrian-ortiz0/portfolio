@@ -15,7 +15,7 @@ body {
   background: linear-gradient(
       to bottom,
       rgba(12, 7, 30, 0.278),
-      rgba(14, 14, 14, 0.316),
+      rgba(14, 14, 14, 0),
       rgba(12, 5, 12, 0.926)
     ),
     url("../public/skills_background.jpg");
@@ -206,7 +206,7 @@ body {
       rgba(4, 11, 16, 0.434),
       rgba(12, 5, 12, 0.493)
     ),
-    url("public/aboutme_1.jpg");
+    url("../public/aboutme_1.jpg");
   background-size: cover;
   width: 100%;
   min-height: 100vh;
@@ -353,11 +353,11 @@ strong {
   width: 100%;
   background: linear-gradient(
       to bottom,
-      rgba(12, 7, 30, 0.484),
-      rgba(30, 84, 125, 0.284),
+      rgba(12, 7, 30, 0.541),
+      rgb(96 181 245 / 73%),
       rgba(12, 5, 12, 0.879)
     ),
-    url("public/header__background.jpg");
+    url("../public/header__background.jpg");
   background-size: cover;
   background-position: center;
   background-blend-mode: overlay;
@@ -502,7 +502,7 @@ strong {
       rgba(2, 30, 29, 0.5) 50%,
       rgba(0, 0, 0, 0.252)
     ),
-    url("public/projects_background.jpg");
+    url("../public/projects_background.jpg");
   background-color: black;
   justify-content: center;
   gap: clamp(20px, 5vw, 50px);

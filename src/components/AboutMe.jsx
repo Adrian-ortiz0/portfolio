@@ -6,7 +6,7 @@ export const AboutMe = () => {
       <section className="aboutme__section">
         <div className="aboutme__container">
           <div className="aboutme__content">
-            <img src="../public/mi_foto.svg" alt="" />
+            <img src="../mi_foto.svg" alt="" />
             <div className="aboutme__content">
               <h2>Hi, I'm Adrián Ortiz</h2>
               <h3>

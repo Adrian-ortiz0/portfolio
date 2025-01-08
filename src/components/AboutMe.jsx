@@ -21,7 +21,7 @@ export const AboutMe = () => {
               <a href="">
                 <button>
                   <img
-                    src="../public/header_icons/linkedin_icon.svg"
+                    src="../header_icons/linkedin_icon.svg"
                     alt=""
                     width={20}
                     height={20}
@@ -34,7 +34,7 @@ export const AboutMe = () => {
                 <button>
                   {" "}
                   <img
-                    src="../public/header_icons/email_icon.svg"
+                    src="../header_icons/email_icon.svg"
                     alt=""
                     width={20}
                     height={20}
@@ -47,7 +47,7 @@ export const AboutMe = () => {
                 <button>
                   {" "}
                   <img
-                    src="../public/header_icons/github_icon.svg"
+                    src="../header_icons/github_icon.svg"
                     alt=""
                     width={20}
                     height={20}

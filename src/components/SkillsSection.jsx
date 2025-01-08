@@ -47,7 +47,7 @@ export const SkillsSection = () => {
       level: 80,
     },
     {
-      src: "../public/sphere__icons/getpostman-icon.svg",
+      src: "../sphere__icons/getpostman-icon.svg",
       skill: "Postman",
       level: 90,
     },

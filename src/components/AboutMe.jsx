@@ -64,25 +64,23 @@ export const AboutMe = () => {
             <div className="mision">
               <h2>Misión</h2>
               <p>
-                To design, develop, and maintain robust, scalable, and
-                high-performance web applications by leveraging my expertise in
-                full-stack development with Java technologies. My goal is to
-                deliver innovative solutions that meet client needs, optimize
-                processes, and enhance user experiences while continuously
-                improving my skills and staying at the forefront of emerging
-                technologies.
+                To design, develop, and maintain scalable, high-performance web
+                applications by leveraging my expertise in full-stack
+                development. I aim to deliver innovative solutions, enhance user
+                experiences, and optimize processes while continuously expanding
+                my skills and staying current with emerging technologies, with a
+                strong focus on Java and other modern tools.
               </p>
             </div>
             <div className="vision">
               <h2>Visión</h2>
               <p>
-                To become a leading full-stack developer known for creating
-                impactful, efficient, and future-proof software solutions using
-                Java. I aspire to empower businesses and organizations by
-                building sustainable digital solutions that drive growth and
-                transformation, fostering a seamless integration of both
-                front-end and back-end technologies for maximum value and
-                innovation.
+                My vision is to become a prominent full-stack developer,
+                recognized for creating impactful, efficient, and sustainable
+                software solutions. I aspire to empower organizations by
+                building digital solutions that drive growth and transformation,
+                seamlessly integrating front-end and back-end technologies to
+                maximize value and innovation.
               </p>
             </div>
           </div>

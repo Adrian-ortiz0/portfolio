@@ -122,6 +122,7 @@ export const Projects = () => {
       <main className="projects" id="projects">
         <div className="project-text">
           <h2>Projects</h2>
+          <p>My Highlighted Projects</p>
         </div>
         <div className="project-list__container">
           <ul className="project-list">

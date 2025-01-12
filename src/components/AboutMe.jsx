@@ -58,7 +58,6 @@ export const AboutMe = () => {
               </a>
             </div>
           </div>
-        </div>
         <section className="aboutMe_extras">
           <div className="mvContainer">
             <div className="mision">
@@ -96,6 +95,8 @@ export const AboutMe = () => {
             </div>
           </div>
         </section>
+        </div>
+        
       </section>
     </>
   );

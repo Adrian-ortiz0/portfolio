@@ -13,6 +13,7 @@ export const Portfolio = () => {
       <AboutMe />
       <SkillsSection />
       <Projects />
+      <ContactMe />
     </>
   );
 };

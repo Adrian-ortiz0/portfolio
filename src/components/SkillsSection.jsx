@@ -63,7 +63,7 @@ export const SkillsSection = () => {
     <section className="skills__section">
       <Canvas
         camera={{ position: [0, 0, 5], fov: 50 }}
-        style={{ width: "100%", height: "100%" }}
+        style={{ width: "100%", height: "90%" }}
       >
         <OrbitControls
           enableZoom={false}

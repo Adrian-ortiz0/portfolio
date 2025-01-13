@@ -11,6 +11,7 @@ body {
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
+  max-height: 100vh;
   justify-content: space-around;
   background: linear-gradient(
       to bottom,
@@ -231,8 +232,8 @@ body {
   background-color: rgba(255, 255, 255, 0.042);
   padding: 60px;
   margin: 0 auto;
-  backdrop-filter: blur(10px);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.063);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -834,33 +835,32 @@ strong {
   background-position: center;
   background-blend-mode: overlay;
   padding: 20px;
-  flex-wrap: wrap;
   box-sizing: border-box;
-}
-
-.contactme__form-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  width: 30%;
-  max-width: 500px;
-  text-align: start;
-  background-color: rgba(255, 255, 255, 0.042);
-  padding: 40px;
-  backdrop-filter: blur(10px);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  border-radius: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.063);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .principal{
   display: flex;
   width: 70%;
   margin: auto;
+  text-align: start;
   justify-content: space-around;
+  gap: 20px;
 }
+.contactme__form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 45%;
+  text-align: start;
+  background-color: rgba(255, 255, 255, 0.042);
+  padding: 40px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.063);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
 
 .contactme__form-container::before{
   content: "";
@@ -937,7 +937,8 @@ strong {
 
 .contactme__input-submit {
   display: flex;
-  align-items: center;
+  align-items: start;
+  justify-content: start;
   width: 100%;
   margin-top: 25px;
 }
@@ -948,7 +949,7 @@ strong {
   padding: 10px 20px;
   border-radius: 5px;
   border: none;
-  background-color: #c48cb38e;
+  background-color: #c48cb3ac;
   color: rgba(255, 255, 255, 0.603);
   font-size: 0.9rem;
   cursor: pointer;
@@ -965,32 +966,77 @@ strong {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  width: 100%;
-  max-width: 500px;
+  width: 40%;
   text-align: start;
-  background-color: rgba(255, 255, 255, 0.042);
-  padding: 60px;
-  backdrop-filter: blur(10px);
+  padding: 40px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.063);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 .contactme_info-containerText h2{
-  color: #e3b6b1;
-  font-size: 3rem;
+  color: #c48cb3;
+  font-size: 4rem;
   margin: 10px 0;
-  text-align: center;
+  text-align: end;
 }
 .contactme_info-containerText p{
   color: rgba(255, 255, 255, 0.692);
+  text-align: end;  
+  font-size: 1.2rem;
 }
 
-.contactme__info-container img:hover {
-  animation: colorShift 3s infinite;
+.contactme_info-containerExtras{
+  width: 100%;
+  color: rgba(255, 255, 255, 0.692);
+  
 }
 
-@media (max-width: 768px) {
+.extras_group{
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 10px;
+}
+
+@media (max-width: 980px){
+  .principal{
+    width: 80%;
+    flex-wrap: wrap-reverse;
+  }
+  .contactme__form-container{
+    width: 80%;
+    padding: 40px;
+  }
+  .contactme_info-containerExtras{
+    flex-wrap: wrap;
+  }
+
+  .contactme__info-container{
+    align-items: center;
+    width: 80%;
+  }
+  .contactme_info-containerExtras{
+    display: flex;
+    text-align: center;
+  }
+  .extras_group{
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .contactme_info-containerText h2{
+    text-align: center;
+  }
+  .contactme_info-containerText p{
+    text-align: center;
+  }
+
+}
+
+@media (max-width: 500px) {
   .contactme__section {
     height: auto;
   }
@@ -1000,9 +1046,15 @@ strong {
     width: 95%;
   }
 
+  .principal{
+    width: 90%;
+  }
+  .contactme__info-container{
+    width: 100%;
+  }
+
   .contactme__form-container {
-    width: 80%;
-    height: auto;
+    width: 100%;
     text-align: center;
   }
 
@@ -1011,11 +1063,8 @@ strong {
   }
 
   .contactme__input-submit button {
-    width: 50%;
+    width: auto;
     height: 50px;
-  }
-  .contactme__info-container{
-    display: none;
   }
 }
 

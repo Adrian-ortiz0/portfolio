@@ -35,7 +35,6 @@ export const SkillsSection = () => {
       skill: "Spring",
       level: 90,
     },
-    { src: "../sphere__icons/unity3d-icon.svg", skill: "Unity", level: 65 },
     {
       src: "../sphere__icons/vitejsdev-icon.svg",
       skill: "ViteJS",
@@ -60,24 +59,24 @@ export const SkillsSection = () => {
   };
 
   return (
-    <section className="skills__section">
+    <section className="skills__section" id="skills">
       <Canvas
         camera={{ position: [0, 0, 5], fov: 50 }}
         style={{ width: "100%", height: "90%" }}
       >
         <OrbitControls
           enableZoom={false}
-          enablePan={true}
+          enablePan={false}
           enableRotate={true}
           autoRotate
-          autoRotateSpeed={2}
+          autoRotateSpeed={4}
         />
         <ambientLight intensity={0.4} />
         <directionalLight position={[5, 5, 5]} intensity={1} />
         <Sphere args={[1.5, 32, 32]}>
           <meshStandardMaterial transparent={true} opacity={0.1} color="gray" />
           {sphere_icons.map((image, index) => {
-            const phi = Math.acos(-1 + (2 * index) / sphere_icons.length);
+            const phi = Math.acos(-0.9 + (2 * index) / sphere_icons.length);
             const theta = Math.sqrt(sphere_icons.length * Math.PI) * phi;
             return (
               <Html

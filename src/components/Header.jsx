@@ -31,7 +31,7 @@ export const Header = () => {
 
   return (
     <>
-      <header className="header">
+      <header className="header" id="home">
         <nav className={`nav ${isScrolled ? "scrolled" : ""}`}>
           <div className="menu-icon" onClick={toggleMenu}>
             &#9776;
@@ -41,13 +41,13 @@ export const Header = () => {
               <a href="#home">Home</a>
             </li>
             <li>
-              <a href="#about">Skills</a>
+              <a href="#about">About Me</a>
             </li>
             <li>
-              <a href="#services">Projects</a>
+              <a href="#skills">Skills</a>
             </li>
             <li>
-              <a href="#portfolio">About Me</a>
+              <a href="#projects">Projects</a>
             </li>
             <li>
               <a href="#contact">Contact Me</a>
@@ -61,8 +61,14 @@ export const Header = () => {
             <p>Full Stack React & Spring Boot</p>
           </div>
           <div className="header__buttons">
-            <button>Download CV</button>
+            <a href="public/Adrian CV.pdf" target="blank">
+
+            <button>Download CV</button>  
+            </a>
+            <a href="https://github.com/Adrian-ortiz0" target="blank">
+
             <button>Github</button>
+            </a>
           </div>
         </section>
       </header>

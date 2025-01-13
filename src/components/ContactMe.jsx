@@ -2,7 +2,7 @@ import React from "react";
 import "../style.css";
 export const ContactMe = () => {
   return (
-    <section className="contactme__section">
+    <section className="contactme__section" id="contact">
       <div className="principal">
       <div className="contactme__form-container">
         <form action="" className="contactme__form">
@@ -33,11 +33,11 @@ export const ContactMe = () => {
         </div>
         <div className="contactme_info-containerExtras">
           <div className="extras_group">
-            <img src="public/header_icons/email_icon.svg" alt="" width={20} height={20}/>
+            <img src="../header_icons/email_icon.svg" alt="" width={20} height={20}/>
             <p>dxniel7328@gmail.com</p>
           </div>
           <div className="extras_group">
-            <img src="public/telephone.png" alt="" width={20} height={20}/>
+            <img src="../header_icons/telephone.png" alt="" width={20} height={20}/>
             <p>+57 317-310-9595</p>
           </div>
         </div>

@@ -362,15 +362,24 @@ strong {
 }
 
 .certifications {
+  display: flex;
+  justify-content: space-around;
   width: 100%;
   height: 30%;
+  gap: 10px;
+  flex-wrap: wrap;
+  
+}
+a{
+  text-decoration: none;
 }
 .certifications div {
-  width: 100%;
-  height: 100%;
+  min-width: 20%;
+  max-width: 150px;
+  max-height: 150px;
   background-color: #191919;
   color: #c5b9b9;
-  padding: 10px 30px;
+  padding: 20px;
   box-sizing: border-box;
   overflow: hidden;
   border-radius: 10px;
@@ -378,7 +387,8 @@ strong {
 }
 .certifications div h2 {
   color: #d9bed1;
-  font-size: clamp(1.3rem, 1vw, 1.2rem);
+  font-size: clamp(1.1rem, 0.5vw, 1rem);
+
 }
 .certifications div p {
   text-align: justify;
@@ -645,24 +655,24 @@ strong {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
-.project-list li {
+.project-list button {
   flex: 1;
   padding: 10px;
   border-right: #ccc 1px solid;
   list-style: none;
   text-align: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
-.project-list li:last-child {
-  border-right: none;
-}
 
-.project-list li:hover {
+.project-list button:hover {
   background-color: #1f1f1f;
 }
 
-.project-list li:hover {
+.project-list button:hover {
   background-color: #1f1f1f;
 }
 

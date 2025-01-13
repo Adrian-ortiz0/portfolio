@@ -1,4 +1,5 @@
 import { AboutMe } from "./components/AboutMe.jsx";
+import { AboutMeExtras } from "./components/AboutMeExtras.jsx";
 import { ContactMe } from "./components/ContactMe.jsx";
 import { Footer } from "./components/Footer.jsx";
 import { Header } from "./components/Header.jsx";

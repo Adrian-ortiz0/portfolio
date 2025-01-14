@@ -61,7 +61,7 @@ export const Header = () => {
             <p>Full Stack React & Spring Boot</p>
           </div>
           <div className="header__buttons">
-            <a href="public/Adrian CV.pdf" target="blank">
+            <a href="/Adrian CV.pdf" target="blank">
 
             <button>Download CV</button>  
             </a>

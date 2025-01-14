@@ -828,7 +828,7 @@ a{
   gap: 10px;
   flex-wrap: wrap;
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.034);
+  background-color: rgba(255, 255, 255, 0);
   padding: 40px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border-radius: 12px;
@@ -840,7 +840,8 @@ a{
   min-width: 10%;
   max-width: 150px;
   height: 80px;
-  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.063);
   background-color: #191919;
   color: #c5b9b9;
   padding: 20px;

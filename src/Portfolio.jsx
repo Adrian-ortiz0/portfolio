@@ -15,7 +15,6 @@ export const Portfolio = () => {
       <AboutMe />
       <SkillsSection />
       <Projects />
-      <Certifications />
       <ContactMe />
     </>
   );

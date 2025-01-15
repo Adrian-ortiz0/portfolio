@@ -10,15 +10,15 @@ export const ContactMe = () => {
 
     emailjs
       .sendForm(
-        "service_A7328", // Tu Service ID
-        "template_4i7vjif", // Tu Template ID
+        "service_A7328",
+        "template_4i7vjif", 
         form.current,
-        "fXT2oO43dC2RXoABx" // Tu Public Key
+        "fXT2oO43dC2RXoABx" 
       )
       .then(
         (result) => {
           alert("Mensaje enviado con éxito");
-          form.current.reset(); // Reinicia el formulario después de enviar
+          form.current.reset(); 
         },
         (error) => {
           console.error("Error al enviar el mensaje:", error);
